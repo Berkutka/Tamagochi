@@ -1,0 +1,172 @@
+/*Обнуление*/
+*{padding:0;margin:0;border:0;}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+nav,footer,header,aside{display:block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+ul li{list-style:none;}
+img{vertical-align:top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
+/*--------------------*/
+
+body{
+    background: url("../image/bgfon.png") center/cover no-repeat;
+}
+.content{
+    padding-top: 2px;
+    /*height: 100vh;*/
+
+}
+
+.container{
+    padding: 10px;
+    max-width: 420px;
+    margin: 100px auto;
+}
+
+.tamagochi {
+    background-color: #a9e5e0;
+    padding: 10px;
+    width: 420px;
+}
+
+.t__start {
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 400px;
+    height: 400px;
+    display: none;
+}
+
+.active {
+    display: flex;
+}
+
+.start__btn {
+    margin: 20px 30px;
+    width: 90px;
+    height: 40px;
+    background-color: #c45858;
+    color: #fff;
+    font-size: 24px;
+    border-radius: 10px;
+}
+
+.level1 {
+    background: url("../image/fon_cat.jpg") center/cover no-repeat;
+    display: none;
+}
+
+.l1__cat {
+}
+
+.cat__img {
+}
+
+.l1__button{
+    padding: 20px 0 20px 0;
+    height: 150px;
+    background-color: #a9eae8;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: end;
+}
+
+.l1__buttons {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 70px;
+    background-color: #eab8b6;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 10px;
+}
+
+.l1__buttons p{
+    position: absolute;
+    bottom: -20px;
+    left: 10px;
+}
+
+.game__over img{
+    width: 100%;
+}
+
+.game__over {
+    display: none;
+}
+
+.active1 {
+    display: block;
+}
+
+.timer{
+    padding: 20px 0 20px 5px;
+    font-size: 24px;
+
+}
+
+.l1__btn{
+    background-color: #a9eae8;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.l1__btn button{
+    width: 30%;
+    height: 25px;
+    border-radius: 5px;
+    background-color: #c90909;
+    font-size: 18px;
+}
+
+.restart {
+    background-color: #8ee777;
+    font-size: 24px;
+    margin: 20px auto;
+    width: 100px;
+}
+
+
+/*- Статистика:
+    - еда
+    - чистый
+    - счастье
+- Действия:
+    - есть: +30 еды; -20 чистых
+    - стирка: +40 чистота; -20 счастья
+    - бег: +15 счастья; -10 еды
+- Правила:
+    - все характеристики должны уменьшаться каждые 5 секунд
+    - все характеристики должны начинаться со случайных очков в диапазоне 50-100
+    - вся статистика должна отображаться в виде столбцов
+    - действия должны отображаться в виде кнопок, каждое действие имеет отдельную кнопку
+    - игрок должен нажимать на кнопки действий, чтобы увеличить статистику
+    - игрок проиграет, если одна из характеристик станет 0
+    - игрок увидит количество времени, сколько прожил тамагочи
+    - игрок может перезапуститься, если проиграет
+    - игрок должен выбрать тип тамагочи при запуске
+- Два вида тамагочи:
+    - Ленивый мопс (сложный уровень)
+        - характеристики уменьшаются на 5 очков за 5 секунд
+        - максимальное количество очков за каждую характеристику 70
+    - Пушистый котенок (легкий уровень)
+        - характеристики уменьшаются на 3 очка за 5 секунд
+        - максимальное количество очков за каждую характеристику 100
+
+ */
